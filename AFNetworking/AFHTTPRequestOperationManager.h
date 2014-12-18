@@ -38,22 +38,32 @@
 
 /**
  `AFHTTPRequestOperationManager` encapsulates the common patterns of communicating with a web application over HTTP, including request creation, response serialization, network reachability monitoring, and security, as well as request operation management.
+ `AFHTTPRequestOperationManager` 封装了通过 HTTP 与 Web 服务器通讯的常用方法
+ 包括：创建请求，对相应数据的反序列化，网络连接状态监测，安全，以及请求操作管理
 
- ## Subclassing Notes
+ ## Subclassing Notes － 子类注意事项
  
  Developers targeting iOS 7 or Mac OS X 10.9 or later that deal extensively with a web service are encouraged to subclass `AFHTTPSessionManager`, providing a class method that returns a shared singleton object on which authentication and other configuration can be shared across the application.
+ 要开发 iOS 7 或 Mac OS X 10.9 以上版本，建议使用 `AFHTTPSessionManager`
  
  For developers targeting iOS 6 or Mac OS X 10.8 or earlier, `AFHTTPRequestOperationManager` may be used to similar effect.
+ 要开发 iOS 6 或 Mac OS X 10.8 之前版本，建议使用 `AFHTTPRequestOperationManager`
  
- ## Methods to Override
+ ## Methods to Override － 方法重写
 
  To change the behavior of all request operation construction for an `AFHTTPRequestOperationManager` subclass, override `HTTPRequestOperationWithRequest:success:failure`.
+ 如果要在 `AFHTTPRequestOperationManager` 的自定义子类中改变所有请求操作结构
+ 请重写 `HTTPRequestOperationWithRequest:success:failure` 方法
 
- ## Serialization
+ ## Serialization - 序列化/反序列化
  
  Requests created by an HTTP client will contain default headers and encode parameters according to the `requestSerializer` property, which is an object conforming to `<AFURLRequestSerialization>`. 
+ `requestSerializer`属性，由 HTTP 客户端创建的请求，包含默认的请求头和编码参数
+ 该对象遵守 `<AFURLRequestSerialization>` 协议
  
  Responses received from the server are automatically validated and serialized by the `responseSerializers` property, which is an object conforming to `<AFURLResponseSerialization>`
+ `responseSerializers`属性，从服务器接收到的数据，并被自动验证和反序列化
+ 该对象遵守 `<AFURLResponseSerialization>` 协议
 
  ## URL Construction Using Relative Paths
 

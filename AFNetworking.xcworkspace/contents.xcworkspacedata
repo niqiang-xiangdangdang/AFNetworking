@@ -47,7 +47,7 @@
       </Group>
       <Group
          location = "container:"
-         name = "Security">
+         name = "Security(&#x5b89;&#x5168;)">
          <FileRef
             location = "group:AFNetworking/AFSecurityPolicy.h">
          </FileRef>
@@ -57,7 +57,7 @@
       </Group>
       <Group
          location = "container:"
-         name = "Reachability">
+         name = "Reachability(&#x8fde;&#x63a5;&#x72b6;&#x6001;)">
          <FileRef
             location = "group:AFNetworking/AFNetworkReachabilityManager.h">
          </FileRef>
@@ -67,7 +67,7 @@
       </Group>
       <Group
          location = "container:"
-         name = "Serialization">
+         name = "Serialization(&#x5e8f;&#x5217;&#x5316;/&#x53cd;&#x5e8f;&#x5217;&#x5316;)">
          <FileRef
             location = "group:AFNetworking/AFURLRequestSerialization.h">
          </FileRef>
