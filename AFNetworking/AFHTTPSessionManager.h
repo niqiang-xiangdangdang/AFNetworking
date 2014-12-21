@@ -179,7 +179,7 @@
  @param url The base URL for the HTTP client.
             <br />HTTP 客户端的基础 URL
  @param configuration The configuration used to create the managed session.
-            <br />用于创建和管理会话的配置
+            <br />用于创建管理的网络会话的配置
 
  @return The newly-initialized HTTP client
             <br />新初始化的 HTTP 客户端
