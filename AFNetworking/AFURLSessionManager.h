@@ -632,6 +632,7 @@ extern NSString * const AFURLSessionDidInvalidateNotification;
 
 /**
  Posted when a session download task encountered an error when moving the temporary download file to a specified destination.
+ <br />会话的下载任务将临时下载文件移动指定目录发生错误通知
  */
 extern NSString * const AFURLSessionDownloadTaskDidFailToMoveFileNotification;
 
@@ -639,11 +640,13 @@ extern NSString * const AFURLSessionDownloadTaskDidFailToMoveFileNotification;
  The raw response data of the task. Included in the userInfo dictionary of the `AFNetworkingTaskDidFinishNotification` if response data exists for the task.
 
  @deprecated Use `AFNetworkingTaskDidCompleteResponseDataKey` instead.
+ <br />请使用 `AFNetworkingTaskDidCompleteResponseDataKey` 替代
  */
 extern NSString * const AFNetworkingTaskDidFinishResponseDataKey DEPRECATED_ATTRIBUTE;
 
 /**
  The raw response data of the task. Included in the userInfo dictionary of the `AFNetworkingTaskDidFinishNotification` if response data exists for the task.
+ <br />任务的原始响应数据，如果任务存在响应数据，包含在 `AFNetworkingTaskDidFinishNotification` 的 userInfo 字典中
  */
 extern NSString * const AFNetworkingTaskDidCompleteResponseDataKey;
 
@@ -651,11 +654,13 @@ extern NSString * const AFNetworkingTaskDidCompleteResponseDataKey;
  The serialized response object of the task. Included in the userInfo dictionary of the `AFNetworkingTaskDidFinishNotification` if the response was serialized.
 
  @deprecated Use `AFNetworkingTaskDidCompleteSerializedResponseKey` instead.
+ <br />请使用 `AFNetworkingTaskDidCompleteSerializedResponseKey` 替代
  */
 extern NSString * const AFNetworkingTaskDidFinishSerializedResponseKey DEPRECATED_ATTRIBUTE;
 
 /**
  The serialized response object of the task. Included in the userInfo dictionary of the `AFNetworkingTaskDidFinishNotification` if the response was serialized.
+ <br />任务响应数据的反序列化对象，如果响应数据已经被反序列化，包含在 `AFNetworkingTaskDidFinishNotification` 的 userInfo 字典中
  */
 extern NSString * const AFNetworkingTaskDidCompleteSerializedResponseKey;
 
@@ -663,11 +668,13 @@ extern NSString * const AFNetworkingTaskDidCompleteSerializedResponseKey;
  The response serializer used to serialize the response. Included in the userInfo dictionary of the `AFNetworkingTaskDidFinishNotification` if the task has an associated response serializer.
 
  @deprecated Use `AFNetworkingTaskDidCompleteResponseSerializerKey` instead.
+ <br />请使用 `AFNetworkingTaskDidCompleteResponseSerializerKey` 替代
  */
 extern NSString * const AFNetworkingTaskDidFinishResponseSerializerKey DEPRECATED_ATTRIBUTE;
 
 /**
  The response serializer used to serialize the response. Included in the userInfo dictionary of the `AFNetworkingTaskDidFinishNotification` if the task has an associated response serializer.
+ <br />响应序列化器用于反序列化响应数据，如果任务已经关联至响应序列化器，包含在 `AFNetworkingTaskDidFinishNotification` 的 userInfo 字典中
  */
 extern NSString * const AFNetworkingTaskDidCompleteResponseSerializerKey;
 
@@ -675,11 +682,13 @@ extern NSString * const AFNetworkingTaskDidCompleteResponseSerializerKey;
  The file path associated with the download task. Included in the userInfo dictionary of the `AFNetworkingTaskDidFinishNotification` if an the response data has been stored directly to disk.
 
  @deprecated Use `AFNetworkingTaskDidCompleteAssetPathKey` instead.
+ <br />请使用 `AFNetworkingTaskDidCompleteAssetPathKey` 替代
  */
 extern NSString * const AFNetworkingTaskDidFinishAssetPathKey DEPRECATED_ATTRIBUTE;
 
 /**
  The file path associated with the download task. Included in the userInfo dictionary of the `AFNetworkingTaskDidFinishNotification` if an the response data has been stored directly to disk.
+ <br />与下载任务关联的文件路径，如果响应数据已经被保存至磁盘，包含在 `AFNetworkingTaskDidFinishNotification` 的 userInfo 字典中
  */
 extern NSString * const AFNetworkingTaskDidCompleteAssetPathKey;
 
@@ -687,10 +696,12 @@ extern NSString * const AFNetworkingTaskDidCompleteAssetPathKey;
  Any error associated with the task, or the serialization of the response. Included in the userInfo dictionary of the `AFNetworkingTaskDidFinishNotification` if an error exists.
 
  @deprecated Use `AFNetworkingTaskDidCompleteErrorKey` instead.
+ <br />请使用 `AFNetworkingTaskDidCompleteErrorKey` 替代
  */
 extern NSString * const AFNetworkingTaskDidFinishErrorKey DEPRECATED_ATTRIBUTE;
 
 /**
  Any error associated with the task, or the serialization of the response. Included in the userInfo dictionary of the `AFNetworkingTaskDidFinishNotification` if an error exists.
+ <br />与任务或者响应反序列化关联的错误，如果错误存在，包括在 `AFNetworkingTaskDidFinishNotification` 的 userInfo 字典中
  */
 extern NSString * const AFNetworkingTaskDidCompleteErrorKey;
